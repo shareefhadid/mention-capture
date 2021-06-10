@@ -1,0 +1,9 @@
+.git
+.gitattributes
+.gitignore
+.env
+client
+node_modules
+npm-debug.log
+/server/scripts/venv
+/server/scripts/.vscode

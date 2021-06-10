@@ -1,0 +1,30 @@
+version: "3"
+services:
+  app:
+    restart: always
+    build: "."
+    command: ["/wait-for-it.sh", "mongo:27017", "-t", "0", "--", "npm", "start"]
+    ports:
+      - "8010:3000"
+    env_file: .env
+    depends_on:
+      - mongo
+    networks:
+      - my_net
+  mongo:
+    container_name: mongo
+    restart: always
+    image: mongo:4.4.6
+    # sets up volume conntecting local directory with data inside of mongo container (so that if we compose down, data does not get lost)
+    volumes:
+      - ./db_data:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=${DB_USER}
+      - MONGO_INITDB_ROOT_PASSWORD=${DB_PASSWORD}
+    ports:
+      - "27017:27017"
+    networks:
+      - my_net
+networks:
+  my_net:
+    driver: bridge

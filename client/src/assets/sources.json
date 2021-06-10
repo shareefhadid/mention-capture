@@ -1,0 +1,370 @@
+[
+  {
+    "name": "Digital Health Canada",
+    "url": "https://digitalhealthcanada.com/feed",
+    "categories": [
+      "Canada",
+      "Health"
+    ]
+  },
+  {
+    "name": "Patients Canada",
+    "url": "https://patientscanada.ca/feed/",
+    "categories": [
+      "Canada",
+      "Health"
+    ]
+  },
+  {
+    "name": "Ontario Telemedicine Network",
+    "url": "https://otn.ca/feed",
+    "categories": [
+      "Canada",
+      "Health"
+    ]
+  },
+  {
+    "name": "BBC Health",
+    "url": "https://feeds.bbci.co.uk/news/health/rss.xml",
+    "categories": [
+      "International",
+      "UK"
+    ]
+  },
+  {
+    "name": "NPR",
+    "url": "https://feeds.npr.org/1001/rss.xml",
+    "categories": [
+      "International",
+      "US"
+    ]
+  },
+  {
+    "name": "Al Jazeera",
+    "url": "https://www.aljazeera.com/xml/rss/all.xml",
+    "categories": [
+      "International",
+      "Qatar"
+    ]
+  },
+  {
+    "name": "Global Issues",
+    "url": "https://www.globalissues.org/news/feed",
+    "categories": [
+      "International",
+      "India"
+    ]
+  },
+  {
+    "name": "Nature Health Science",
+    "url": "https://www.nature.com/subjects/health-sciences.rss",
+    "categories": [
+      "International",
+      "Academic"
+    ]
+  },
+  {
+    "name": "Study Sciences",
+    "url": "https://studysciences.com/feed",
+    "categories": [
+      "International",
+      "Academic"
+    ]
+  },
+  {
+    "name": "The Health Science Journal",
+    "url": "https://www.thehealthsciencejournal.com/feed/",
+    "categories": [
+      "International",
+      "Academic"
+    ]
+  },
+  {
+    "name": "NHPCO Palliative Care",
+    "url": "http://feeds.feedburner.com/nhpcoupdater",
+    "categories": [
+      "US",
+      "Health",
+      "Palliative"
+    ]
+  },
+  {
+    "name": "Palliative Care Network",
+    "url": "https://palliativecarenetwork.com/feed/",
+    "categories": [
+      "Palliative",
+      "Health"
+    ]
+  },
+  {
+    "name": "Butterfly Home",
+    "url": "http://butterflyhospice.org/blog/feed/",
+    "categories": [
+      "Palliative",
+      "Health"
+    ]
+  },
+  {
+    "name": "Life and Death Matters",
+    "url": "http://butterflyhospice.org/blog/feed/",
+    "categories": [
+      "Palliative",
+      "Health"
+    ]
+  },
+  {
+    "name": "1800Hospice",
+    "url": "https://www.1800hospice.com/hospice-blog/feed/",
+    "categories": [
+      "US",
+      "Palliative",
+      "Health"
+    ]
+  },
+  {
+    "name": "The Denver Hospice",
+    "url": "https://thedenverhospice.org/feed/",
+    "categories": [
+      "US",
+      "Palliative",
+      "Health"
+    ]
+  },
+  {
+    "name": "Jersey Hospice Care",
+    "url": "https://www.jerseyhospicecare.com/feed/",
+    "categories": [
+      "US",
+      "Palliative",
+      "Health"
+    ]
+  },
+  {
+    "name": "CBC Health",
+    "url": "https://www.cbc.ca/cmlink/rss-health",
+    "categories": [
+      "Canada",
+      "Health"
+    ]
+  },
+  {
+    "name": "CTV Top News",
+    "url": "http://www.ctvnews.ca/rss/ctvnews-ca-top-stories-public-rss-1.822009",
+    "categories": [
+      "Canada"
+    ]
+  },
+  {
+    "name": "Global News",
+    "url": "https://globalnews.ca/feed/",
+    "categories": [
+      "Canada"
+    ]
+  },
+  {
+    "name": "Toronto Star Top Stories",
+    "url": "http://www.thestar.com/content/thestar/feed.RSSManagerServlet.topstories.full.rss",
+    "category": [
+      "Canada"
+    ]
+  },
+  {
+    "name": "Huffington Post",
+    "url": "https://www.huffingtonpost.ca/feeds/index.xml",
+    "category": [
+      "Canada"
+    ]
+  },
+  {
+    "name": "Toronto Sun",
+    "url": "https://torontosun.com/feed/",
+    "category": [
+      "Canada"
+    ]
+  },
+  {
+    "name": "Vancouver Sun",
+    "url": "https://vancouversun.com/feed/?x=1",
+    "category": [
+      "Canada"
+    ]
+  },
+  {
+    "name": "Montreal Gazette",
+    "url": "https://montrealgazette.com/feed/",
+    "category": [
+      "Canada"
+    ]
+  },
+  {
+    "name": "Macleans Magazine",
+    "url": "https://www.macleans.ca/feed/",
+    "category": [
+      "Canada"
+    ]
+  },
+  {
+    "name": "Calgary Herald",
+    "url": "https://calgaryherald.com/feed/",
+    "category": [
+      "Canada"
+    ]
+  },
+  {
+    "name": "Ottawa Citizen",
+    "url": "https://ottawacitizen.com/feed/",
+    "category": [
+      "Canada"
+    ]
+  },
+  {
+    "name": "Ottawa Sun",
+    "url": "https://ottawasun.com/feed/",
+    "category": [
+      "Canada"
+    ]
+  },
+  {
+    "name": "The Province",
+    "url": "https://theprovince.com/feed/",
+    "category": [
+      "Canada"
+    ]
+  },
+  {
+    "name": "Canada dot com",
+    "url": "https://o.canada.com/feed/",
+    "category": [
+      "Canada"
+    ]
+  },
+  {
+    "name": "National Observer",
+    "url": "https://www.nationalobserver.com/front/rss",
+    "category": [
+      "Canada"
+    ]
+  },
+  {
+    "name": "Calgary Sun",
+    "url": "https://calgarysun.com/feed/",
+    "category": [
+      "Canada"
+    ]
+  },
+  {
+    "name": "Victoria News",
+    "url": "http://www.vicnews.com/feed/",
+    "category": [
+      "Canada"
+    ]
+  },
+  {
+    "name": "CDC",
+    "url": "https://blogs.cdc.gov/publichealthmatters/feed/",
+    "categories": [
+      "US",
+      "Academic",
+      "Health"
+    ]
+  },
+  {
+    "name": "Oxford Academic",
+    "url": "https://academic.oup.com/rss/site_5210/3076.xml",
+    "categories": [
+      "US",
+      "Academic",
+      "Health"
+    ]
+  },
+  {
+    "name": "Kaiser",
+    "url": "https://khn.org/feed",
+    "categories": [
+      "Academic",
+      "Health"
+    ]
+  },
+  {
+    "name": "NY Times Public Health",
+    "url": "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/section/well/rss.xml",
+    "categories": [
+      "US",
+      "Health"
+    ]
+  },
+  {
+    "name": "Health News Review",
+    "url": "https://www.healthnewsreview.org/blog/feed/",
+    "categories": [
+      "US",
+      "Health"
+    ]
+  },
+  {
+    "name": "Association of Health Care Journalists",
+    "url": "https://healthjournalism.org/blog/feed/",
+    "categories": [
+      "US",
+      "Health"
+    ]
+  },
+  {
+    "name": "Center for Innovative Public Health",
+    "url": "https://innovativepublichealth.org/feed/",
+    "categories": [
+      "US",
+      "Academic",
+      "Health"
+    ]
+  },
+  {
+    "name": "WHO",
+    "url": "https://www.who.int/feeds/entity/mediacentre/news/en/rss.xml",
+    "categories": [
+      "International",
+      "Academic",
+      "Health"
+    ]
+  },
+  {
+    "name": "OECD Canada",
+    "url": "https://www.oecd.org/canada/index.xml",
+    "categories": [
+      "Canada"
+    ]
+  },
+  {
+    "name": "OECD Health",
+    "url": "https://www.oecd.org/health/index.xml",
+    "categories": [
+      "International",
+      "Health"
+    ]
+  },
+  {
+    "name": "PAHO",
+    "url": "http://www1.paho.org/English/DD/PIN/rss.asp",
+    "categories": [
+      "International",
+      "Health"
+    ]
+  },
+  {
+    "name": "CHIMA Health Information",
+    "url": "https://www.echima.ca/feed/",
+    "categories": [
+      "Canada",
+      "Academic",
+      "Health"
+    ]
+  },
+  {
+    "name": "CMHA",
+    "url": "https://cmha.ca/feed",
+    "categories": [
+      "Canada",
+      "Health"
+    ]
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "author": "Nick Campbell",
+    "licenseType": "MIT",
+    "name": "bcrypt",
+    "link": "git+https://github.com/kelektiv/node.bcrypt.js.git",
+    "installedVersion": "5.0.0"
+  },
+  {
+    "author": "Troy Goode",
+    "licenseType": "MIT",
+    "name": "cors",
+    "link": "git+https://github.com/expressjs/cors.git",
+    "installedVersion": "2.8.5"
+  },
+  {
+    "author": "Ryuichi Inagaki",
+    "licenseType": "MIT",
+    "name": "csv-writer",
+    "link": "git+https://github.com/ryu1kn/csv-writer.git",
+    "installedVersion": "1.6.0"
+  },
+  {
+    "licenseType": "BSD-2-Clause",
+    "name": "dotenv",
+    "link": "git://github.com/motdotla/dotenv.git",
+    "installedVersion": "8.2.0"
+  },
+  {
+    "author": "TJ Holowaychuk",
+    "licenseType": "MIT",
+    "name": "express",
+    "link": "git+https://github.com/expressjs/express.git",
+    "installedVersion": "4.17.1"
+  },
+  {
+    "licenseType": "BSD-3-Clause",
+    "name": "joi",
+    "link": "git://github.com/sideway/joi.git",
+    "installedVersion": "17.2.0"
+  },
+  {
+    "author": "auth0",
+    "licenseType": "MIT",
+    "name": "jsonwebtoken",
+    "link": "git+https://github.com/auth0/node-jsonwebtoken.git",
+    "installedVersion": "8.5.1"
+  },
+  {
+    "author": "Guillermo Rauch",
+    "licenseType": "MIT",
+    "name": "mongoose",
+    "link": "git://github.com/Automattic/mongoose.git",
+    "installedVersion": "5.11.12"
+  },
+  {
+    "author": "Matt Patenaude",
+    "licenseType": "MIT",
+    "name": "node-schedule",
+    "link": "git+https://github.com/node-schedule/node-schedule.git",
+    "installedVersion": "2.0.0"
+  },
+  {
+    "author": "Andris Reinman",
+    "licenseType": "MIT",
+    "name": "nodemailer",
+    "link": "git+https://github.com/nodemailer/nodemailer.git",
+    "installedVersion": "6.4.17"
+  },
+  {
+    "author": "Remy Sharp",
+    "licenseType": "MIT",
+    "name": "nodemon",
+    "link": "git+https://github.com/remy/nodemon.git",
+    "installedVersion": "2.0.4"
+  }
+]
