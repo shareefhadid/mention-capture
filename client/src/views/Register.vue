@@ -51,6 +51,25 @@
               <div class="error-message">{{ message }}</div>
             </div>
 
+            <!-- CONFIRM PASSWORD FIELD -->
+            <div class="form-control">
+              <Password
+                v-model="confirmPassword"
+                toggleMask
+                placeholder="Confirm Password"
+                :class="{
+                  'p-invalid': validationMessages.hasOwnProperty('confirmPassword'),
+                }"
+              />
+            </div>
+
+            <div
+              v-for="(message, index) of validationMessages['confirmPassword']"
+              :key="index"
+            >
+              <div class="error-message">{{ message }}</div>
+            </div>
+
             <!-- PASSCODE FIELD -->
             <div class="form-control">
               <Password
@@ -94,6 +113,7 @@ export default {
     return {
       name: "",
       password: "",
+      confirmPassword: "",
       passcode: "",
       messages: [],
       validationMessages: {},
@@ -105,6 +125,7 @@ export default {
       const { error } = registerValidation({
         name: this.name,
         password: this.password,
+        confirmPassword: this.confirmPassword,
         passcode: this.passcode,
       });
       if (error) {
@@ -122,6 +143,7 @@ export default {
         .post("/api/user/register", {
           name: this.name,
           password: this.password,
+          confirmPassword: this.confirmPassword,
           passcode: this.passcode,
         })
         .then(() =>

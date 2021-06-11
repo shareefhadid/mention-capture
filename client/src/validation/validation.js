@@ -25,6 +25,10 @@ const registerValidation = (data) => {
         "any.required": `Password is a required field`,
         "string.pattern.base": `Password can only contain numbers, letters, spaces, or underscores`,
       }),
+    confirmPassword: Joi.any()
+      .equal(Joi.ref('password'))
+      .required()
+      .messages({ 'any.only': 'Password does not match', "any.required": `You must confirm your password` }),
     passcode: Joi.string().required().messages({
       "string.base": `Passcode should be a string`,
       "string.empty": `Passcode cannot be left empty`,
