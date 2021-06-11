@@ -1,5 +1,4 @@
-# FROM node:current-alpine3.12
-FROM shareefhadid/node-3-12-and-python-3-test1
+FROM node:slim
 
 WORKDIR /usr/src/app
 
@@ -11,7 +10,8 @@ COPY wait-for-it.sh /wait-for-it.sh
 
 USER root
 
-# alpine packages: https://pkgs.alpinelinux.org/packages
-RUN apk add --update --no-cache g++ gcc libxslt-dev py-lxml bash && npm install && pip install -r requirements.txt && chmod 755 /wait-for-it.sh
+RUN apt-get update -y && apt-get dist-upgrade -y && apt-get autoremove -y
+RUN apt-get install -y python3 python3-pip && pip3 install --upgrade pip
+RUN npm install && pip3 install -r requirements.txt && chmod 755 /wait-for-it.sh
 
 COPY . .
