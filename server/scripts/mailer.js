@@ -6,7 +6,7 @@ const nodemailer = require("nodemailer");
 const Newsletter = require("../models/Newsletter");
 const Result = require("../models/Result");
 // SCRIPTS
-const executePalliatrack = require("./executePalliatrack");
+const execCaptureSearch = require("./execCaptureSearch");
 const newsletter_template = require("./newsletter_template");
 
 // AGGREGATOR. SET OF STEPS THAT ALLOW FEWER QUERY RESULTS AFTER EACH STEP. FINAL ARRAY CONTAINS CORRECT STRUCTURE FOR MAILER.

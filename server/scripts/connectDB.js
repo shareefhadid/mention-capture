@@ -4,8 +4,7 @@ require("dotenv/config");
 const connectDB = async () => {
   try {
     await mongoose.connect(
-      `mongodb://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}/palliatrack_db?authSource=admin`,
-      // `mongodb://localhost:27017/palliatrack_db`,
+      process.env.NODE_ENV === "production" ? process.env.MONGO_URI : process.env.DEV_URI,
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,

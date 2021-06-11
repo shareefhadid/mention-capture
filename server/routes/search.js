@@ -1,11 +1,11 @@
 // MODULES
 const express = require("express");
 // MODELS
-const Search = require("../models/Search.js");
+const Search = require("../models/Capture.js");
 const Result = require("../models/Result.js");
 const Newsletter = require("../models/Newsletter.js");
 // SCRIPTS
-const executePalliatrack = require("../scripts/executePalliatrack");
+const execCaptureSearch = require("../scripts/execCaptureSearch");
 const { searchValidation } = require("../scripts/validation");
 
 // SET UP ROUTER

@@ -1,13 +1,5 @@
 const mongoose = require("mongoose");
 
-// Each result along with its source, child of resultsSchema
-const resultsSchema = mongoose.Schema(
-  {
-
-  },
-  { _id: false }
-);
-
 // Results are outputted by the Python script, child of searchSchema
 const searchResultsSchema = mongoose.Schema(
   {

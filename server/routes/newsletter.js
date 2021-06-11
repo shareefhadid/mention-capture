@@ -2,7 +2,7 @@
 const express = require("express");
 // MODELS
 const Newsletter = require("../models/Newsletter.js");
-const Search = require("../models/Search.js");
+const Search = require("../models/Capture.js");
 const Result = require("../models/Result.js");
 // SCRIPTS
 const mailer = require("../scripts/mailer.js");

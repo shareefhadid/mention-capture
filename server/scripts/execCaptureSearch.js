@@ -8,7 +8,7 @@ const execPyScript = (args) => {
   return new Promise((resolve, reject) => {
     try {
       const process = spawn("python3", [
-        `${path.join(__dirname, "palliatrack.py")}`,
+        `${path.join(__dirname, "capture_search.py")}`,
         args ? args : [],
       ]);
       // We access the stdout stream which will output print statmenets from our python code and pass them in the reponse.

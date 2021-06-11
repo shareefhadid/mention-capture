@@ -4,7 +4,7 @@ const schedule = require("node-schedule");
 const Newsletter = require("../models/Newsletter");
 const mailer = require("./mailer");
 // SCRIPTS
-const executePalliatrack = require("./executePalliatrack");
+const execCaptureSearch = require("./execCaptureSearch");
 
 var jobs = {};
 
