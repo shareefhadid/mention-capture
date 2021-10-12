@@ -74,32 +74,64 @@ const loginValidation = (data) => {
   });
 };
 
-const searchValidation = (data) => {
+const captureValidation = (data) => {
   const schema = Joi.object({
     _id: Joi.string(),
-    search_name: Joi.string()
+    capture_name: Joi.string()
       .pattern(/^[\w\s]+$/)
       .min(3)
       .max(40)
       .required()
       .messages({
-        "string.base": `Search name should be a string`,
-        "string.empty": `Search name cannot be left empty`,
-        "string.min": `Search name should be at least {#limit} characters`,
-        "string.max": `Search name should be under {#limit} characters`,
-        "any.required": `Search name is a required field`,
-        "string.pattern.base": `Search name can only contain numbers, letters, spaces, or underscores`,
+        "string.base": `Capture name should be a string`,
+        "string.empty": `Capture name cannot be left empty`,
+        "string.min": `Capture name should be at least {#limit} characters`,
+        "string.max": `Capture name should be under {#limit} characters`,
+        "any.required": `Capture name is a required field`,
+        "string.pattern.base": `Capture name can only contain numbers, letters, spaces, or underscores`,
       }),
-    search_terms: Joi.array()
+    search_options: Joi.object({
+      or_terms: Joi.array()
       .items(
         Joi.string().min(1).max(50).messages({
-          "string.base": `Search term should be a string`,
-          "string.empty": `Search term cannot be left empty`,
-          "string.min": `Search term should be at least {#limit} characters`,
-          "string.max": `Search term should be under {#limit} characters`,
+          "string.base": `Term should be a string`,
+          "string.empty": `Term cannot be left empty`,
+          "string.min": `Term should be at least {#limit} characters`,
+          "string.max": `Term should be under {#limit} characters`,
         }),
         Joi.string().pattern(/[<>]/).forbidden()
-      )
+      ),
+      and_terms: Joi.array()
+      .items(
+        Joi.string().min(1).max(50).messages({
+          "string.base": `Term should be a string`,
+          "string.empty": `Term cannot be left empty`,
+          "string.min": `Term should be at least {#limit} characters`,
+          "string.max": `Term should be under {#limit} characters`,
+        }),
+        Joi.string().pattern(/[<>]/).forbidden()
+      ),
+      not_terms: Joi.array()
+      .items(
+        Joi.string().min(1).max(50).messages({
+          "string.base": `Term should be a string`,
+          "string.empty": `Term cannot be left empty`,
+          "string.min": `Term should be at least {#limit} characters`,
+          "string.max": `Term should be under {#limit} characters`,
+        }),
+        Joi.string().pattern(/[<>]/).forbidden()
+      ),
+      tags: Joi.array()
+      .items(
+        Joi.string().min(1).max(50).messages({
+          "string.base": `Term should be a string`,
+          "string.empty": `Term cannot be left empty`,
+          "string.min": `Term should be at least {#limit} characters`,
+          "string.max": `Term should be under {#limit} characters`,
+        }),
+        Joi.string().pattern(/[<>]/).forbidden()
+      ),
+    })
       .max(100)
       .messages({
         "array.excludes": `Search terms cannot contain '<' or '>'`,

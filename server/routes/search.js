@@ -1,9 +1,8 @@
 // MODULES
 const express = require("express");
 // MODELS
-const Search = require("../models/Capture.js");
+const Capture = require("../models/Capture.js");
 const Result = require("../models/Result.js");
-const Newsletter = require("../models/Newsletter.js");
 // SCRIPTS
 const execCaptureSearch = require("../scripts/execCaptureSearch");
 const { searchValidation } = require("../scripts/validation");
@@ -15,7 +14,7 @@ const router = express.Router();
 router.get("/", async (req, res) => {
   let output = {};
   try {
-    output.mongo = await Search.find().sort({ updatedAt: "descending" });
+    output.mongo = await Capture.find().sort({ updatedAt: "descending" });
   } catch (error) {
     return res.status(400).json({ err: error, output: output });
   }
@@ -25,8 +24,8 @@ router.get("/", async (req, res) => {
 // POST TO ADD SEARCH
 router.post("/", async (req, res) => {
   let output = {};
-  const searchCount = await Search.countDocuments({});
-  if (searchCount > 25) {
+  const captureCount = await Capture.countDocuments({});
+  if (captureCount > 25) {
     return res.json({
       err:
         "You can have a maximum of 25 searches, please delete one and try again",
@@ -37,10 +36,12 @@ router.post("/", async (req, res) => {
   const { error } = searchValidation(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
-  const search = new Search({
-    search_name: req.body.search_name,
-    search_terms: req.body.search_terms,
+  const search = new Capture({
+    capture_name: req.body.capture_name,
     sources: req.body.sources,
+    search_options: req.body.searchOptions,
+    email_options: req.body.emailOptions,
+    user_id: req.body.user_id,
   });
   try {
     output.mongo = await search.save();
